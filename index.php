@@ -87,7 +87,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: ;
 }
 
 .container {
@@ -122,11 +122,30 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: white;
+   text-align: center;
+}
+
+.text-center {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
 </style>
 </head>
 <body>
 
-<h2 class="text-center">Message Scheduler App</h2>
+<h1 class="text-center">Message Scheduler App</h1>
 
 <div class="container">
   <form method="post">
@@ -196,9 +215,11 @@ input[type=submit]:hover {
       <input type="submit" value="Submit" name="submit">
     </div>
   </form>
-</div>
+</div> <br>
 
-<div>&copy; 2010-<?php echo date("Y");?></div>
+<div class="footer">
+  <p>&copy; 2010-<?php echo date("Y");?></p>
+</div>
 
 </body>
 </html>
